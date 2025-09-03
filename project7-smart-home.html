@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居控制系统 - 项目详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alibaba+PuHuiTi:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e40af;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --card-bg-dark: rgba(30, 41, 59, 0.8);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Alibaba PuHuiTi', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        [data-theme="dark"] .glass {
+            background: var(--card-bg-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-primary { color: var(--primary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .bg-primary { background-color: var(--primary-color); }
+        .bg-secondary { background-color: var(--secondary-color); }
+        .border-primary { border-color: var(--primary-color); }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <header class="fixed w-full z-50 py-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between">
+                <a href="index (1).html" class="text-2xl font-bold text-blue-600">返回首页</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <div class="container mx-auto px-4">
+            <!-- 项目标题区域 -->
+            <section class="text-center py-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">智能家居控制系统</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">基于物联网技术的全屋智能控制解决方案</p>
+            </section>
+
+            <!-- 项目概览 -->
+            <section class="py-12">
+                <div class="glass rounded-xl p-8 max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-6">项目概览</h2>
+                    <p class="text-lg mb-4">
+                        这套智能家居控制系统整合了最新的IoT技术，实现了灯光、温度、安防、娱乐等全方位的智能控制。
+                        系统支持语音控制、手机APP远程操作，以及AI学习用户习惯，提供个性化的智能生活体验。
+                    </p>
+                    <h3 class="text-2xl font-semibold mt-8 mb-4">核心功能</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>全屋设备互联互通</li>
+                        <li>AI语音助手控制</li>
+                        <li>智能场景模式切换</li>
+                        <li>能耗监测与优化</li>
+                        <li>远程监控与安防</li>
+                        <li>个性化学习算法</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 技术细节 -->
+            <section class="py-12">
+                <div class="glass rounded-xl p-8 max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-6">技术实现</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">硬件集成</h4>
+                            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                <li>• Zigbee 3.0无线协议</li>
+                                <li>• 边缘计算网关</li>
+                                <li>• 多传感器融合</li>
+                                <li>• 低功耗设计</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-3">软件架构</h4>
+                            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                <li>• 微服务架构</li>
+                                <li>• 云端数据分析</li>
+                                <li>• 机器学习算法</li>
+                                <li>• 开放API接口</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
